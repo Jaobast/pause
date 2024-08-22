@@ -2,7 +2,7 @@ const productData = [
     {
         name: 'Burger Smash',
         description: '160g saftiges Rindfleisch, perfekt „gesmasht“ für eine knusprige Kruste, dazu geschmolzener Cheddar, frischer Salat, Tomaten, rote Zwiebeln und unsere würzige Haus-Sauce im getoasteten Brioche-Brötchen. Der ultimative Genuss!',
-        pics:'./assets/burgers/hamb-1.png',
+        pics:'./assets/burgers/burger-1.png',
         price: '12.90',
         kcal: '330'
     },
