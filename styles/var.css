@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Lilita';
+    src: url(../assets/font/LilitaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Asap';
+    src: url(../assets/font/Asap-VariableFont_wdth\,wght.ttf);
+}
+
+:root{
+    --blue: #247dce;
+    --red: #900D0D;
+    --bread: #f4e6ce;
+    --bread-dark: #EED9BC;
+    --green: #045204;
+    --grey: #303030;
+
+
+
+    --text-S: 12px;
+    --text-default: 15px;
+    --text-M: 20px;
+    --text-L: 25px;
+    --text-XL: 30px;
+    --text-XXL: 35px;
+}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Tech Burguer"/>
+    <meta property="og:description" content="Der beste entwickelte Burger"/>
+    <meta property="og:image" content=""/>
+    <meta property="og:site_name" content="TechBurger"/>
+
+
+    <link rel="stylesheet" href="./styles/style.css"/>
+    <link rel="stylesheet" href="./styles/var.css"/>
+    <link rel="stylesheet" href="./styles/media.css"/>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+
+    <title>Tech Burguer</title>
+</head>
+<body>
+    
+    <header>
+      <div class="container_header">
+        <h1>Menü</h1>
+
+        <div class="container_logo">
+          <div class="logo logo-header"></div>
+        </div>
+
+      </div>
+
+      <div class="container_search">
+        <input 
+        type="text"
+        placeholder="&#xF002; suchen" style="font-family:'Asap', FontAwesome"
+        id="search"
+      >
+      </div>
+
+      <div class="container_category">
+        <button class="clicked">Alle</button>
+        <button>Beef</button>
+        <button>Veggie</button>
+        <button>Beilage</button>
+        <button>Getränke</button>
+      </div>
+
+
+    </header>
+
+    
+    <div id="werbung">
+
+      <div class="container-werbung">
+
+        <div class="layer1">
+          <div class="logo"></div>
+          
+          <div class="text">
+            <p class="text1">Plant Burger</p>
+            <p class="text2">natürlich pflanzlich, Natürlich lecker</p>
+          </div>
+
+        </div>
+
+        <div class="layer2">
+          <img src="./assets/img/wallpaper-01.jpg" alt="">
+        </div>
+       </div>
+
+    </div>
+
+    <div class="titel"><h2>Popular</h2></div>
+    
+
+    <div id="menu">
+        <main>
+            <div class="hamburger">
+                <img src="./assets/burgers/hamb-1.png" alt="Burger Smash">
+
+                <div>
+                    <p class="name-product">Burger Smash</p>
+                    <p class="description">160g saftiges Rindfleisch, perfekt „gesmasht“ für eine knusprige Kruste, dazu geschmolzener Cheddar, frischer Salat, Tomaten, rote Zwiebeln und unsere würzige Haus-Sauce im getoasteten Brioche-Brötchen. Der ultimative Genuss!</p>
+
+                    <div class="container_buy">
+                        <p class="price">12.90€</p>
+                        <button
+                          class="button_buy"
+                          data-name="Burger Smash"
+                          data-price="12.90"
+                        >
+                          <i class="fa fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="hamburger">
+                <img src="./assets/burgers/hamb-2.png" alt="Burger Double">
+
+                <div>
+                    <p class="name-product">Burger Double</p>
+                    <p class="description">Doppelt saftiges Rindfleisch (2x160g), geschmolzener Cheddar, frischer Salat, Tomaten, Zwiebeln und BBQ-Sauce im getoasteten Brioche-Brötchen. Perfekt für großen Hunger und vollen Genuss.</p>
+
+                    <div class="container_buy">
+                        <p class="price">15.90€</p>
+                        <button
+                          class="button_buy"
+                          data-name="Burger Double"
+                          data-price="15.90"
+                        >
+                          <i class="fa fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="hamburger">
+                <img src="./assets/burgers/hamb-8.png" alt="Burger Salad">
+
+                <div>
+                    <p class="name-product">Burger Salad</p>
+                    <p class="description">Ein frischer Mix aus knackigem Salat, saftigen Tomaten, Gurken und roten Zwiebeln, verfeinert mit herzhaften Burger-Streifen und einem leichten Dressing. Ideal als leichte, aber dennoch geschmackvolle Mahlzeit.</p>
+
+                    <div class="container_buy">
+                        <p class="price">12.50€</p>
+                        <button
+                          class="button_buy"
+                          data-name="Burger Salad"
+                          data-price="12.50"
+                        >
+                          <i class="fa fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="hamburger">
+                <img src="./assets/burgers/hamb-3.png" alt="Burger Eggs">
+
+                <div>
+                    <p class="name-product">Burger Eggs</p>
+                    <p class="description">Herzhafte Rinderhackfleischbällchen kombiniert mit perfekt gebratenen Eiern – wahlweise als Spiegelei oder Rührei. Serviert mit frischem Gemüse oder knusprigem Brot, für ein sättigendes und leckeres Gericht.</p>
+
+                    <div class="container_buy">
+                        <p class="price">13.90€</p>
+                        <button
+                          class="button_buy"
+                          data-name="Burger Eggs"
+                          data-price="13.90"
+                        >
+                          <i class="fa fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="hamburger">
+                <img src="./assets/burgers/hamb-7.png" alt="Burger Rings">
+
+                <div>
+                    <p class="name-product">Burger Rings</p>
+                    <p class="description">Knusprige Zwiebelringe, goldbraun frittiert und perfekt gewürzt. Diese leckeren Beilagen ergänzen jeden Burger ideal und bieten einen unwiderstehlich knusprigen Crunch mit jedem Bissen.</p>
+
+                    <div class="container_buy">
+                        <p class="price">15.90€</p>
+                        <button
+                          class="button_buy"
+                          data-name="Burger Rings"
+                          data-price="15.90"
+                        >
+                          <i class="fa fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="hamburger">
+                <img src="./assets/burgers/hamb-6.png" alt="Tech Burger">
+
+                <div>
+                    <p class="name-product">Tech Burger</p>
+                    <p class="description">Unsere Spezialität des Hauses. Saftiges Rindfleisch-Patty mit Cheddar, Speck, Salat, Tomaten und Zwiebeln, serviert in einem getoasteten Brioche-Brötchen mit hausgemachter Sauce. Der perfekte Burger!</p>
+
+                    <div class="container_buy">
+                        <p class="price">15.90€</p>
+                        <button
+                          class="button_buy"
+                          data-name="Tech Burger"
+                          data-price="15.90"
+                        >
+                          <i class="fa fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </main>
+
+        <div>
+            <h2 class="drink-title">Getränke</h2>
+
+            <div class="grid">
+
+                <div class="drink">
+                    <img src="./assets/drinks/refri-2.png" alt="Wasser">
+    
+                    <div class="drink-container">
+                        <p class="name-product">Wasser 1 L</p>
+    
+                        <div class="container_buy">
+                            <p class="price">2.50€</p>
+                            <button
+                              class="button_buy"
+                              data-name="Wasser"
+                              data-price="2.50"
+                            >
+                              <i class="fa fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="drink">
+                    <img src="./assets/drinks/refri-1.png" alt="Cola">
+    
+                    <div class="drink-container">
+                        <p class="name-product">Cola 350 <span>ml</span></p>
+    
+                        <div class="container_buy">
+                            <p class="price">3.50€</p>
+                            <button
+                              class="button_buy"
+                              data-name="Cola"
+                              data-price="3.50"
+                            >
+                              <i class="fa fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="drink">
+                    <img src="./assets/drinks/refri-3.png" alt="Cola Zero">
+    
+                    <div class="drink-container">
+                        <p class="name-product">Cola Zero 350 <span>ml</span></p>
+    
+                        <div class="container_buy">
+                            <p class="price">3.50€</p>
+                            <button
+                              class="button_buy"
+                              data-name="Cola Zero"
+                              data-price="3.50"
+                            >
+                              <i class="fa fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+              
+                <div class="drink">
+                    <img src="./assets/drinks/refri-4.png" alt="Fanta">
+    
+                    <div class="drink-container">
+                        <p class="name-product">Fanta 350 <span>ml</span></p>
+    
+                        <div class="container_buy">
+                            <p class="price">3.50€</p>
+                            <button
+                              class="button_buy"
+                              data-name="Fanta"
+                              data-price="3.50"
+                            >
+                              <i class="fa fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="hidden">
+        <div class="container-modal">
+            <div class="titel">
+                <h3>Mein Einkaufswagen</h3>
+            </div>
+
+            <div id="cart-items"></div>
+
+            <p class="bold">Total: <span id="cart-total">0.00€</span></p>
+            <p class="bold adresse">Adresse: </span></p>
+
+            <input 
+              type="text"
+              placeholder="Schreib deine Adresse..."
+              id="adresse"
+            >
+
+            <p id="adresse-warn" class="hidden">Gib bitte die Adresse ein!</p>
+
+            <div class="container-btn">
+                <button id="close-modal-btn">Schließen</button>
+                <button id="checkout-modal-btn">Abschließen</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="modal-product" class="hidden">
+      <div class="container-modal">
+          <div class="cover"><img src="" alt=""></div>
+  
+          <div class="titel">
+              <h3>Product name</h3>
+          </div>
+  
+          <p class="kcal">kcal</p>
+          <p class="description">Descrição do produto</p>
+          <p class="price">Preço</p>
+  
+          <div class="btn">
+              <button id="close-modal-btn">Schließen</button>
+              <button class="button_buy"
+                data-name=""
+                data-price=""
+              ><i class="fa fa-cart-plus"></i></button>
+          </div>
+      </div>
+  </div>
+
+
+    <footer>
+        <button id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Einkaufswagen <i class="fa fa-cart-plus"></i>
+        </button>
+    </footer>
+   
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
+    <script src="script/array.js"></script>
+    <script src="script/logo.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
