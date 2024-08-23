@@ -172,9 +172,9 @@ header {
 /* MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN */
 
 
-main, .grid{
+.beef-burger, .grid{
   display: grid; grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 1rem; margin: 4vh auto 0 auto; padding: 0 1rem;
+  gap: 1rem; margin: 4vh auto 7vh auto; padding: 0 1rem;
   width: 86vw;
 }
 
@@ -212,13 +212,13 @@ main, .grid{
     }
 }
 
-   main img, .grid img{
+  .beef-burger img, .grid img{
     width: 5rem; height: 5rem;
     border-radius: 10px;
     object-fit: cover;
   }
 
-  main img:hover, .grid img:hover {
+  .beef-burger img:hover, .grid img:hover {
     transform: scale(1.1) rotate(-2deg); transition: transform 300ms ease-in-out;
   }
 
@@ -226,7 +226,7 @@ main, .grid{
 
   
 
-  main i, .grid i, #modal-product i{ color: var(--bread); font-size: 15px;}
+  .beef-burger i, .grid i, #modal-product i{ color: var(--bread); font-size: 15px;}
 
 
 
