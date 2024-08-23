@@ -61,7 +61,10 @@ header {
 }
 
 .container_category{
-  margin: 5vh 0 0 7vw; width: 130vw; padding-bottom: 3px;
+  margin: 5vh 0 0 0; padding-bottom: 3px;
+  overflow: auto; white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 
   & button{
     background-color: var(--bread-dark); color: var(--grey);
@@ -78,12 +81,18 @@ header {
     animation: clicked-color 1s forwards;
     color: var(--bread);
   }
+
+  .alle{margin-left: 7vw;}
 }
 
 @keyframes clicked-color {
   0% {background-color: var(--bread-dark); transform: scale(1);}
   20% {transform: scale(1.07);}
   100% {background-color: var(--red); transform: scale(1);}
+}
+
+.container_category::-webkit-scrollbar {
+  display: none;
 }
 
 
