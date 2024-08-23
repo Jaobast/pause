@@ -49,7 +49,7 @@ header {
   & input{
     width: 100%; height: 40px; border-radius: 60px!important;
     border: none; font-size: 14px;
-    background-color: rgb(238, 217, 188);
+    background-color: var(--bread-dark);
     color: var(--grey); padding-left: 5vw;
     font-size: var(--text-L);
   }
@@ -82,6 +82,11 @@ header {
     color: var(--bread);
   }
 
+  .clicked-veggie{
+    animation: clicked-veggie 1s forwards!important;
+    color: var(--bread);
+  }
+
   .alle{margin-left: 7vw;}
 }
 
@@ -89,6 +94,12 @@ header {
   0% {background-color: var(--bread-dark); transform: scale(1);}
   20% {transform: scale(1.07);}
   100% {background-color: var(--red); transform: scale(1);}
+}
+
+@keyframes clicked-veggie {
+  0% {background-color: var(--bread-dark); transform: scale(1);}
+  20% {transform: scale(1.07);}
+  100% {background-color: var(--green); transform: scale(1);}
 }
 
 .container_category::-webkit-scrollbar {
@@ -189,13 +200,23 @@ header {
 /* POPULAR  POPULAR  POPULAR  POPULAR  POPULAR  POPULAR  POPULAR  POPULAR*/
 
 
-/* MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN */
+/* BEEF   BEEF   BEEF   BEEF   BEEF   BEEF   BEEF   BEEF   BEEF */
 
 
-.beef-burger, .grid{
+.grid{
   display: grid; grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 1rem; margin: 4vh auto 7vh auto; padding: 0 1rem;
   width: 86vw;
+
+  & img{
+    width: 5rem; height: 5rem;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  & img:hover {
+    transform: scale(1.1) rotate(-2deg); transition: transform 300ms ease-in-out;
+  }
 }
 
 .burger, .drink{
@@ -232,24 +253,8 @@ header {
     }
 }
 
-  .beef-burger img, .grid img{
-    width: 5rem; height: 5rem;
-    border-radius: 10px;
-    object-fit: cover;
-  }
 
-  .beef-burger img:hover, .grid img:hover {
-    transform: scale(1.1) rotate(-2deg); transition: transform 300ms ease-in-out;
-  }
-
-
-
-  
-
-  .beef-burger i, .grid i, #modal-product i{ color: var(--bread); font-size: 15px;}
-
-
-
+  .grid i, #modal-product i{ color: var(--bread); font-size: 15px;}
 
       @keyframes button_buy {
         0% {
@@ -263,7 +268,17 @@ header {
     }
   
 
-/* MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN */
+/* BEEF   BEEF   BEEF   BEEF   BEEF   BEEF   BEEF   BEEF   BEEF */
+
+
+/* VEGGIE   VEGGIE   VEGGIE   VEGGIE   VEGGIE   VEGGIE   VEGGIE */
+
+.burger-veggie{
+  background-color: var(--green-light)!important;
+}
+  
+
+/* VEGGIE   VEGGIE   VEGGIE   VEGGIE   VEGGIE   VEGGIE   VEGGIE */
 
 /* DRINK   DRINK   DRINK   DRINK   DRINK   DRINK   DRINK   DRINK*/
 
