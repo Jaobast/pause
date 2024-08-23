@@ -45,10 +45,10 @@ const productData = [
 
 
     {
-        name: 'Tech Burger',
+        name: 'Burger Roastbeef',
         description: 'Unsere Spezialität des Hauses. Saftiges Rindfleisch-Patty mit Cheddar, Speck, Salat, Tomaten und Zwiebeln, serviert in einem getoasteten Brioche-Brötchen mit hausgemachter Sauce. Der perfekte Burger!',
         pics:'./assets/burgers/hamb-6.png',
-        price: '15.90',
+        price: '18.20',
         kcal: '380'
     },
 
