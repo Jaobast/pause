@@ -1,5 +1,8 @@
 const btnCategory = document.querySelectorAll(".container_category button");
 const btnClicked = document.querySelector(".clicked");
+const searchInput = document.getElementById('search');
+const menuTitel = document.querySelector('.container_header h1');
+const logoTitel = document.querySelector('.logo-header svg');
 
 const werbung = document.getElementById("werbung");
 const popular = document.getElementById("popular");
@@ -18,6 +21,9 @@ btnCategory.forEach(item => {
             btnCategory.forEach(btn => {
                 btn.style.backgroundColor = '';
             });
+            searchInput.style.backgroundColor = '';
+            menuTitel.style.color = '';
+            logoTitel.style.fill = '';
         }
 
         item.classList.add("clicked-new");
@@ -54,6 +60,9 @@ btnCategory.forEach(item => {
             btnCategory.forEach(btn => {
                 btn.style.backgroundColor = 'var(--green-light)';
             });
+            searchInput.style.backgroundColor = 'var(--green-light)';
+            menuTitel.style.color = 'var(--red)';
+            logoTitel.style.fill = 'var(--green)';
         }
 
         lastClickedButton = item;
