@@ -9,12 +9,10 @@ let lastClickedButton = null;
 btnCategory.forEach(item => {
     item.addEventListener('click', function(e) {
         if (lastClickedButton) {
-            lastClickedButton.style.backgroundColor = '';
-            lastClickedButton.style.color = '';
+            lastClickedButton.classList.remove("clicked-new");
         }
 
-        item.style.backgroundColor = 'var(--red)';
-        item.style.color = 'var(--bread)';
+        item.classList.add("clicked-new");
         btnClicked.classList.remove("clicked");
 
         

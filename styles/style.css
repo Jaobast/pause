@@ -61,7 +61,7 @@ header {
 }
 
 .container_category{
-  margin: 5vh 0 0 7vw; width: 130vw;
+  margin: 5vh 0 0 7vw; width: 130vw; padding-bottom: 3px;
 
   & button{
     background-color: var(--bread-dark); color: var(--grey);
@@ -73,6 +73,17 @@ header {
   .clicked{
     background-color: var(--red); color: var(--bread);
   }
+
+  .clicked-new{
+    animation: clicked-color 1s forwards;
+    color: var(--bread);
+  }
+}
+
+@keyframes clicked-color {
+  0% {background-color: var(--bread-dark); transform: scale(1);}
+  20% {transform: scale(1.07);}
+  100% {background-color: var(--red); transform: scale(1);}
 }
 
 
