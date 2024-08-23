@@ -186,7 +186,7 @@ header {
 /* POPULAR  POPULAR  POPULAR  POPULAR  POPULAR  POPULAR  POPULAR  POPULAR*/
 
 #popular{
-  margin-top: 4vh;
+  margin: 4vh 0 10vw 0;
   display: flex; justify-content: center;
 
 }
@@ -198,11 +198,16 @@ header {
 
   & .container{
     overflow-x: auto; white-space: nowrap;
-    margin: 2vh 0 0 7vw;
+    margin: 2vh 0 0 0;
     width: 100%; height: 35vh;
     display: flex;
 
+    & .first-burger{
+      margin-left: 7vw;
+    }
+
     & .product-popular{
+
       width: 20vh; height: 50%; border-radius: 15px;
       background-color: var(--bread-dark);
       margin-right: 15px; padding: 15px;
