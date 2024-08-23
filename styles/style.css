@@ -186,12 +186,12 @@ header {
 /* POPULAR  POPULAR  POPULAR  POPULAR  POPULAR  POPULAR  POPULAR  POPULAR*/
 
 #popular{
-  margin: 4vh 0 10vw 0;
+  margin: 4vh 0 0 0;
   display: flex; justify-content: center;
 
 }
 .grid-popular{
-  height: 30vh;
+  height: 40vh;
   overflow: hidden;
 
   & .titel{ color: var(--red); margin-left: 7vw;}
@@ -199,7 +199,7 @@ header {
   & .container{
     overflow-x: auto; white-space: nowrap;
     margin: 2vh 0 0 0;
-    width: 100%; height: 35vh;
+    width: 100%; height: 100%;
     display: flex;
 
     & .first-burger{
