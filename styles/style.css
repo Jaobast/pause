@@ -145,11 +145,13 @@ header {
   }
 
   & img{
-    top:0; width: 86vw;
+    width: 86vw;
     position: absolute;
     object-fit: cover;
     filter: brightness(0.5);
+    animation: to-bottom 10s forwards;
   }
+
 
   & .text{
     position: absolute; top: 0; left: 0;
@@ -167,6 +169,15 @@ header {
   & .text2{ font-size: var(--text-default); font-weight: 300;}
 }
 
+@keyframes to-bottom {
+  0% {
+    transform: translateY(-40%); /* Começa no topo */
+  }
+  100% {
+    transform: translateY(-50%); /* Move para baixo até sair da tela */
+  }
+}
+
 
 
 /* WERBUNG   WERBUNG   WERBUNG   WERBUNG   WERBUNG   WERBUNG   WERBUNG */
@@ -177,23 +188,39 @@ header {
 #popular{
   margin-top: 4vh;
   display: flex; justify-content: center;
-}
-.container-popular{
-  width: 86%;
 
-  & .container-product{
-    margin-top: 2vh;
-    width: 100%; height: 20vh;
-    display: flex; flex-direction: row;
+}
+.grid-popular{
+  height: 30vh;
+  overflow: hidden;
+
+  & .titel{ color: var(--red); margin-left: 7vw;}
+
+  & .container{
+    overflow-x: auto; white-space: nowrap;
+    margin: 2vh 0 0 7vw;
+    width: 100%; height: 35vh;
+    display: flex;
 
     & .product-popular{
-      width: 15vh; height: 100%; border-radius: 15px;
+      width: 20vh; height: 50%; border-radius: 15px;
       background-color: var(--bread-dark);
-      margin-right: 15px;
+      margin-right: 15px; padding: 15px;
+
+      & img{
+        width: 100%; 
+      }
+
+      & .name{ font-size: var(--text-S);}
+      & .price{ font-size: var(--text-default);
+        font-family: 'Lilita'; color: var(--red);}
     }
-  
+
+
   }
+  
 }
+
 
 
 
