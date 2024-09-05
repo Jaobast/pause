@@ -3,8 +3,14 @@ const detailClose = document.getElementById("detail-close");
 products.forEach(function(product, index) {
     product.addEventListener('click', function() {
 
-        const detalImg = productDetail.querySelector('img');  
-        detalImg.src = productData[index].pics;
+        const detailImg = productDetail.querySelector('img'); 
+        const detailName = productDetail.querySelector('.name');
+        const detailPrice = productDetail.querySelector('.price');
+
+
+        detailImg.src = productData[index].pics;
+        detailName.textContent = productData[index].name;
+        detailPrice.textContent = productData[index].price;
 
 
         productDetail.classList.remove("hidden");
