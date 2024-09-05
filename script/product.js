@@ -6,11 +6,13 @@ products.forEach(function(product, index) {
         const detailImg = productDetail.querySelector('img'); 
         const detailName = productDetail.querySelector('.name');
         const detailPrice = productDetail.querySelector('.price');
+        const detailDescription = productDetail.querySelector('.description-text');
 
 
         detailImg.src = productData[index].pics;
         detailName.textContent = productData[index].name;
         detailPrice.textContent = productData[index].price;
+        detailDescription.textContent = productData[index].description;
 
 
         productDetail.classList.remove("hidden");
@@ -26,7 +28,8 @@ productDetail.addEventListener('click', function(){
 detailClose.forEach(function(product) {
     product.addEventListener('click', function() {
 
-        detailClose.classList.add("hidden");
+        productDetail.classList.add("hidden");
+        productDetail.reset();
     });
 });
 

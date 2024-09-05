@@ -1,7 +1,7 @@
 /* DETAIL   DETAIL   DETAIL   DETAIL   DETAIL   DETAIL   DETAIL   DETAIL*/
 
 #detail{
-    position: absolute; top: 0; left: 0; z-index: 100;
+    position: absolute; top: 0; left: 0; z-index: 200;
     background-color: var(--red);
     width: 100vw; height: 100vh;
 
@@ -12,7 +12,7 @@
       background-color: var(--bread);
       border-radius: 40px 40px 0 0;
       z-index: 1000;
-      display: flex; justify-content: center;
+      display: flex; flex-direction: column; align-items: center;
     }
 }
 
@@ -41,6 +41,23 @@
   z-index: 10;
 }
 
+#add{
+  position: fixed; bottom: 0%;
+  z-index: 2000;
+  width: 100vw;
+  background: linear-gradient( to bottom, #f4e6ce00, var(--bread)30%);
+  display: flex; justify-content: center;
+  padding: 20px 0;
+
+  & button{
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: var(--text-M);
+    color: var(--bread);
+    background-color: var(--red);
+  }
+}
+
 .information{
   width: 80%; margin-top: 50px;
   display: flex; justify-content: space-between; align-items: center;
@@ -59,4 +76,20 @@
     color: var(--bread-darker);
   }
 }
-  /* DETAIL   DETAIL   DETAIL   DETAIL   DETAIL   DETAIL   DETAIL   DETAIL*/
+
+#detail .description, .zutaten{
+  width: 80%; margin-top: 30px; margin-left: 0;
+  font-family: 'Lilita';
+  font-size: var(--text-M);
+  color: var(--bread-darker);
+  text-transform: uppercase;
+}
+
+
+.description-text{
+  width: 80%; margin-top: 30px; margin-left: 0;
+  font-family: 'Asap';
+  font-size: var(--text-default);
+  line-height: 1.75;
+  color: var(--gray);
+}

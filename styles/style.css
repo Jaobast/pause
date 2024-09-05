@@ -328,7 +328,7 @@ header {
 /* FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER*/
 
 footer{
-  position: fixed; bottom: -1px; z-index: 1000;
+  position: fixed; bottom: -1px; z-index: 100;
   left: 50%; transform: translateX(-50%);
   width: 100vw; 
   background-color: var(--red);
