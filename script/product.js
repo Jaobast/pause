@@ -30,9 +30,8 @@ const detailClose = document.getElementById("detail-close");
     });
     
     detailClose.addEventListener('click', function() {
+        window.scrollTo(0,0);
         productDetail.classList.add("hidden");
-
-        window.scrollTo(0,0); 
     
         resetProductDetail();
     });

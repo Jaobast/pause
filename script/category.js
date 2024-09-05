@@ -60,9 +60,8 @@ btnCategory.forEach(item => {
             btnCategory.forEach(btn => {
                 btn.style.backgroundColor = 'var(--green-light)';
             });
-            searchInput.style.backgroundColor = 'var(--green-light)';
-            menuTitel.style.color = 'var(--red)';
-            logoTitel.style.fill = 'var(--green)';
+            menuTitel.style.color = 'var(--green-light)';
+            logoTitel.style.fill = 'var(--green-light)';
         }
 
         lastClickedButton = item;
