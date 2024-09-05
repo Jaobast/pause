@@ -9,10 +9,18 @@ const cartCounter = document.getElementById("cart-count");
 const adressInput = document.getElementById("adresse");
 const adressWarn = document.getElementById("adresse-warn");
 
-const productModal = document.getElementById("modal-product");
-const products = document.querySelectorAll(".name-product");
+const productDetail = document.getElementById("detail");
+const products = document.querySelectorAll(".product");
 
 let cart = [];
+
+
+productDetail.addEventListener('click', function(){
+    productDetail.classList.add("hidden");
+    document.body.style.position = "";
+})
+
+
 
 
 // Abrir o modal
@@ -216,38 +224,6 @@ if(isOpen){
 
 
 
-
-
-products.forEach(function(product, index) {
-    product.addEventListener('click', function() {
-
-        const modalImg = productModal.querySelector('.cover img');
-        const modalTitle = productModal.querySelector('.titel h3');
-        const modalKcal = productModal.querySelector('.kcal');
-        const modalDescription = productModal.querySelector('.description');
-        const modalPrice = productModal.querySelector('.price');
-
-        
-        modalImg.src = productData[index].pics;
-        modalTitle.textContent = productData[index].name;
-        modalKcal.textContent = productData[index].kcal + ' kcal';
-        modalDescription.textContent = productData[index].description;
-        modalPrice.textContent = productData[index].price + '€';
-
-        const modalButtonBuy = productModal.querySelector('.button_buy');
-        modalButtonBuy.setAttribute('data-name', productData[index].name);
-        modalButtonBuy.setAttribute('data-price', productData[index].price);
-
-
-        productModal.classList.remove("hidden");
-    });
-});
-
-
-productModal.addEventListener('click', function(){
-    productModal.classList.add("hidden");
-    document.body.style.position = "";
-})
 
 
 
