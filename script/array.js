@@ -1,4 +1,5 @@
 const productData = [ 
+
     {
         name: 'Burger Smash',
         description: '160g saftiges Rindfleisch, perfekt „gesmasht“ für eine knusprige Kruste, dazu geschmolzener Cheddar, frischer Salat, Tomaten, rote Zwiebeln und unsere würzige Haus-Sauce im getoasteten Brioche-Brötchen. Der ultimative Genuss!',
@@ -54,39 +55,30 @@ const productData = [
 
 
     {
-        name: 'Wasser 1 L',
-        description: '1 Liter Wasser. Medium. Vöslauer',
-        pics:'./assets/drinks/refri-2.png',
+        name: 'Veggie Tower',
+        description: 'Text kommt...',
+        pics:'./assets/burgers/veggie-1.png',
         price: '2.50',
         kcal: '0'
     },
 
 
     {
-        name: 'Cola 350 ml',
-        description: '350 ml Coca Cola. Classic',
-        pics:'./assets/drinks/refri-1.png',
+        name: 'Kichererbse Royal',
+        description: 'Text kommt...',
+        pics:'./assets/burgers/veggie-2.png',
         price: '3.50',
         kcal: '157'
     },
     
 
     {
-        name: 'Cola Zero 350 ml',
-        description: '350 ml Coca Cola. Zero Kcal',
-        pics:'./assets/drinks/refri-3.png',
+        name: 'Champion Burger',
+        description: 'Text kommt...',
+        pics:'./assets/burgers/veggie-3.png',
         price: '3.50',
         kcal: '0'
-    },
-
-
-    {
-        name: 'Fanta 350 ml',
-        description: '350 ml Fanta Orange',
-        pics:'./assets/drinks/refri-4.png',
-        price: '3.50',
-        kcal: '157'
-    },
+    }
 ]
 
 
