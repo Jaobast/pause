@@ -36,6 +36,7 @@ products.forEach(function (product) {
             detailDescription.textContent = selectedProduct.description;
 
 
+            window.scrollTo(0, 0);
             productDetail.classList.remove("hidden");
 
 
@@ -55,6 +56,7 @@ products.forEach(function (product) {
 
 detailClose.addEventListener('click', function () {
     window.scrollTo(0, 0);
+
     productDetail.classList.add("hidden");
 
     resetProductDetail();
