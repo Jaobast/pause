@@ -1,3 +1,7 @@
+const productDetail = document.getElementById("detail");
+const products = document.querySelectorAll(".product");
+console.log(products)
+
 const detailClose = document.getElementById("detail-close");
 
     function resetProductDetail() {
@@ -13,20 +17,25 @@ const detailClose = document.getElementById("detail-close");
     }
     
     products.forEach(function(product, index) {
-        product.addEventListener('click', function() {
+        const productNameInDOM = product.getAttribute('name');
     
-            const detailImg = productDetail.querySelector('img'); 
-            const detailName = productDetail.querySelector('.name');
-            const detailPrice = productDetail.querySelector('.price');
-            const detailDescription = productDetail.querySelector('.description-text');
-    
-            detailImg.src = productData[index].pics;
-            detailName.textContent = productData[index].name;
-            detailPrice.textContent = productData[index].price;
-            detailDescription.textContent = productData[index].description;
-    
-            productDetail.classList.remove("hidden");
-        });
+        if (productNameInDOM === productData[index].name) {
+            product.addEventListener('click', function() {
+                const detailImg = productDetail.querySelector('img'); 
+                const detailName = productDetail.querySelector('.name');
+                const detailPrice = productDetail.querySelector('.price');
+                const detailDescription = productDetail.querySelector('.description-text');
+            
+
+                detailImg.src = productData[index].pics;
+                detailName.textContent = productData[index].name;
+                detailPrice.textContent = productData[index].price;
+                detailDescription.textContent = productData[index].description;
+            
+
+                productDetail.classList.remove("hidden");
+            });
+        }
     });
     
     detailClose.addEventListener('click', function() {

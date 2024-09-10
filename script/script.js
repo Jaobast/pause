@@ -9,7 +9,6 @@ const cartCounter = document.getElementById("cart-count");
 const adressInput = document.getElementById("adresse");
 const adressWarn = document.getElementById("adresse-warn");
 
-const productDetail = document.getElementById("detail");
-const products = document.querySelectorAll(".product");
+
 
 let cart = [];
