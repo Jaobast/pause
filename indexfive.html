@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#A4AED8" id="theme-color-meta" />
+    <title>5 Day to Fitness</title>
+    <link rel="stylesheet" href="./css/var.css">
+    <link rel="stylesheet" href="./css/start.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/workout.css">
+</head>
+<body>
+
+    <header>
+        <img src="./img/logo.svg" alt="Logo 5 Days to Fitness">
+    </header>
+
+    <div id="start">
+        <div class="logo">
+            <img src="./img/logo.svg" alt="Logo 5 Days to Fitness">
+        </div>
+
+        <div class="team">
+            <img src="./img/team-blue.svg" alt="Logo 5 Days to Fitness">
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="bein" class="uebung" onclick="openWorkout('bein')">
+            <p>BEIN</p>
+        </div>
+        <div id="brust" class="uebung" onclick="openWorkout('brust')">
+            <p>BRUST</p>
+        </div>
+        <div id="ruecken" class="uebung" onclick="openWorkout('ruecken')">
+            <p>RÜCKEN</p>
+        </div>
+        <div id="ruder" class="uebung" onclick="openWorkout('ruder')">
+            <p>RUDER</p>
+        </div>
+        <div id="bauch" class="uebung" onclick="openWorkout('bauch')">
+            <p>BAUCH</p>
+        </div>
+    </div>
+
+
+    <div id="workout">
+        <div class="workout-container">
+            <h1 class="h1">Muskelgruppe der Übung</h1>
+            <h4 class="h4">Name der Übung</h4>
+            <p class="p">Text</p>
+        </div>
+
+        <div class="back">
+            <img src="./img/back.svg" onclick="closeWorkout()" class="close-btn" alt="icon für Startseite">
+        </div>
+
+        <div class="wallpaper-lila">
+            <img src="./img/wallpaper-blue.svg">
+        </div>
+
+        <div class="circle">
+            <img class="img" src="" alt="">
+            <img class="wallpaper-circle"src="./img/circle.svg">
+        </div>
+    </div>
+
+
+    <div class="wallpaper">
+        <img src="./img/wallpaper-blue.svg">
+    </div>
+
+
+
+
+
+    <script src="./script/script.js"></script>
+    <script src="./script/array.js"></script>
+</body>
+</html>
