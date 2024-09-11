@@ -1,8 +1,9 @@
-const btnCategory = document.querySelectorAll(".container_category button");
+const btnCategory = document.querySelectorAll(".container_category button, .container_logo, .logo-button");
 const btnClicked = document.querySelector(".clicked");
 const searchInput = document.getElementById('search');
 const menuTitel = document.querySelector('.container_header h1');
 const logoTitel = document.querySelector('.logo-header svg');
+const bttnColor = document.querySelector("button.alle");
 
 const werbung = document.getElementById("werbung");
 const popular = document.getElementById("popular");
@@ -24,6 +25,7 @@ btnCategory.forEach(item => {
             searchInput.style.backgroundColor = '';
             menuTitel.style.color = '';
             logoTitel.style.fill = '';
+            bttnColor.classList.remove("clicked-new");
         }
 
         item.classList.add("clicked-new");
@@ -31,13 +33,22 @@ btnCategory.forEach(item => {
 
         
 
-        if (!item.classList.contains("alle")) {
-            werbung.classList.add("hidden");
-            popular.classList.add("hidden");
-        }else{
+        if (item.classList.contains("alle")) {
+            bttnColor.classList.add("clicked-new");
             werbung.classList.remove("hidden");
             popular.classList.remove("hidden");
+        } else {
+            werbung.classList.add("hidden");
+            popular.classList.add("hidden");
         }
+
+        
+
+        if (item.classList.contains("logo-button")) {
+            document.getElementById("detail").classList.add("hidden");
+        }
+
+
 
 
 
@@ -57,9 +68,6 @@ btnCategory.forEach(item => {
 
         if (item.classList.contains("veggie")) {
             item.classList.add("clicked-veggie");
-            btnCategory.forEach(btn => {
-                btn.style.backgroundColor = 'var(--green-light)';
-            });
             menuTitel.style.color = 'var(--green-light)';
             logoTitel.style.fill = 'var(--green-light)';
         }

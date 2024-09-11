@@ -33,4 +33,8 @@ logoElements.forEach(logoElement => {
     const div = document.createElement('div');
     div.innerHTML = logo;
     logoElement.appendChild(div);
+
+    logoElement.addEventListener('click', function () {
+      
+    })
 });
