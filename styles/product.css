@@ -47,10 +47,20 @@ label{
       top: 5px; right: 20px;
       position: fixed;
       width: 70px;
+      z-index: 20;
+
 
       & svg{
         fill: var(--bread)
       }
+    }
+
+    & img{
+      position: fixed;
+      top: 5%;
+      left: 50%; transform: translateX(-50%);
+      width: 90%;
+      z-index: 10;
     }
 }
 
@@ -71,13 +81,6 @@ label{
     font-size: var(--text-L);
 }
 
-#detail img{
-  position: fixed;
-  top: 5%;
-  left: 50%; transform: translateX(-50%);
-  width: 90%;
-  z-index: 10;
-}
 
 #add{
   position: fixed; bottom: 0%;

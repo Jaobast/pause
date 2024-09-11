@@ -46,6 +46,7 @@ btnCategory.forEach(item => {
 
         if (item.classList.contains("logo-button")) {
             document.getElementById("detail").classList.add("hidden");
+            document.getElementById('theme-color-meta').setAttribute('content', '#f4e6ce');
         }
 
 
