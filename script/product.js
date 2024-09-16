@@ -2,6 +2,7 @@ const productDetail = document.getElementById("detail");
 const products = document.querySelectorAll(".product, .product-popular");
 
 const detailClose = document.getElementById("detail-close");
+const logoClose = document.querySelector(".logo-close");
 
 function resetProductDetail() {
 
@@ -63,6 +64,16 @@ products.forEach(function (product) {
 });
 
 detailClose.addEventListener('click', function () {
+    window.scrollTo(0, 0);
+
+    document.getElementById('theme-color-meta').setAttribute('content', '#f4e6ce');
+
+    productDetail.classList.add("hidden");
+
+    resetProductDetail();
+});
+
+logoClose.addEventListener('click', function () {
     window.scrollTo(0, 0);
 
     document.getElementById('theme-color-meta').setAttribute('content', '#f4e6ce');

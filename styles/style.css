@@ -1,5 +1,6 @@
 *{
   margin: 0; padding: 0;
+  box-sizing: border-box;
 }
 body{
   background-color: var(--bread);
@@ -26,8 +27,15 @@ header {
 
   & .container_logo{
 
-    & .logo-header{ width: 9vh; height: 9vh;}
-    & .logo-header svg{ fill: var(--red)}
+    & .logo-header{
+      top: 0px; right: 0px;
+      position: absolute;
+      width: 70px;
+      z-index: 20;}
+    & .logo-header svg{
+      fill: var(--red);
+      cursor: pointer;
+      outline: none;}
   
     & .logo-header:hover { transform: scale(1.1); transition: transform 500ms ease-in-out;}
   
@@ -108,6 +116,18 @@ header {
 
 
 /* HEADER   HEADER   HEADER   HEADER   HEADER   HEADER   HEADER */
+
+.button_buy{
+  background-color: var(--bread-dark);
+  border: none; width: 20px; height: 20px; border-radius: 100px;
+  color: var(--bread-dark);
+  display: flex; justify-content: center; align-items: center;
+
+  & i{
+    color: var(--green);
+    font-size: var(--text-L);
+  }
+}
 
 
 /* WERBUNG   WERBUNG   WERBUNG   WERBUNG   WERBUNG   WERBUNG   WERBUNG */
@@ -268,11 +288,6 @@ header {
       & .price{ font-weight: 580; font-size: var(--text-default); padding: 0px;
       }
   
-      & .button_buy{
-        background-color: var(--grey);
-        border: none; padding: 0px 15px; border-radius: 7px;
-      }
-  
       & .button_buy:hover {
         transform: scale(1.15);
         transition: transform 300ms ease-in-out;
@@ -283,19 +298,6 @@ header {
     }
 }
 
-
-  .grid i, #modal-product i{ color: var(--bread); font-size: 15px;}
-
-      @keyframes button_buy {
-        0% {
-          background-color: var(--grey);
-          
-        }
-        100% {
-          background-color: var(--green);
-
-        }
-    }
   
 
 /* BEEF   BEEF   BEEF   BEEF   BEEF   BEEF   BEEF   BEEF   BEEF */
@@ -310,20 +312,6 @@ header {
 
 /* VEGGIE   VEGGIE   VEGGIE   VEGGIE   VEGGIE   VEGGIE   VEGGIE */
 
-/* DRINK   DRINK   DRINK   DRINK   DRINK   DRINK   DRINK   DRINK*/
-
-.drink-title{ text-align: left; padding: 0 1rem;}
-.drink-container{ width: 100%;}
-
-.name-product span{ text-transform: lowercase;}
-
-.grid{
-  margin-bottom: 4rem;
-}
-
-
-/* DRINK   DRINK   DRINK   DRINK   DRINK   DRINK   DRINK   DRINK*/
-
 
 /* FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER*/
 
@@ -334,173 +322,20 @@ footer{
   background-color: var(--red);
   padding: 0.6rem 0; border-radius: 15px 15px 0 0;
   display: flex; justify-content: center;
-}
 
-footer i{
-  color: var(--bread); font-size: 15px;
-}
+  & i{
+    color: var(--bread); font-size: 15px;
+  }
 
-footer button{
-  border: none;
-  background-color: transparent;
-  color: var(--bread); font-size: 15px; font-weight: 500;
+  & button{
+    border: none;
+    background-color: transparent;
+    color: var(--bread); font-size: 15px; font-weight: 500;
+  }
 }
 
 /* FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER*/
 
-/* MODAL   MODAL   MODAL   MODAL   MODAL   MODAL   MODAL   MODAL*/
-
-#modal, #modal-product{
-  position: fixed; top: 0; left: 0; z-index: 1100;
-  display: flex; flex-direction: column; justify-content: center; align-items: center;
-  width: 100vw; height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.container-modal{
-  background-color: var(--bread);
-  width: 80vw;
-  border-radius: 30px;
-  padding: 20px;
-  overflow: hidden;
-}
-
-#modal h3{
-  margin-top: 2rem; text-align: center; font-size: 25px;
-  color: var(--red);
-}
-
-#cart-items{
-  display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 2rem;
-}
-
-.bold{ font-weight: 590;}
-
-#cart-total{ font-weight: 400;}
-
-.adresse{ margin: 1rem 0 0.5rem 0;}
-
-#adresse{
-  border: none; font-size: 14px; border-radius: 10px;
-  background-color: rgb(238, 217, 188); padding: 3px 10px;
-  margin-left: -1px;
-}
-
-#adresse::placeholder{
-  color: var(--grey);
-}
-
-.btn-warn{
-  border: solid 1.5px var(--red)!important;
-}
-
-#adresse-warn{
-  color: var(--red); font-size: 14px;
-}
-
 .hidden{
   display: none!important;
 }
-
-.container-btn{
-  display: flex; justify-content: space-between; width: 100%;
-  margin-top: 3rem; margin-bottom: 0.5rem;
-}
-
-#checkout-modal-btn, #close-modal-btn{
-  padding: 5px 8px; font-size: 14px; border-radius: 8px;
-}
-
-#close-modal-btn{ background-color: var(--red); color: white;}
-
-#close-modal-btn:hover {
-  transform: scale(1.05);
-  transition: transform 300ms ease-in-out;
-  box-shadow: 0px 0px 13px rgba(110, 33, 33, 0.5); 
-  overflow: visible;
-}
-
-#checkout-modal-btn{ background-color: var(--green); color: white;}
-
-#checkout-modal-btn:hover {
-  transform: scale(1.05);
-  transition: transform 300ms ease-in-out;
-  box-shadow: 0px 0px 13px rgba(16, 59, 17, 0.3); 
-  overflow: visible;
-}
-
-.container-item{
-  display: flex; justify-content: space-between; margin-bottom: 0.5rem;
-  width: 100%;
-}
-
-.container-item p{ margin: 10px 0; font-size: 15px;}
-
-.container-item .name{ font-size: 17px; font-weight: 580;}
-
-.container-item button{
-  background-color: transparent;
-  font-size: 15px;
-  color: black;
-}
-.container-item button:hover {
-  color: var(--red);
-  font-size: 16px;
-  margin-right: -2px;
-}
-/* MODAL   MODAL   MODAL   MODAL   MODAL   MODAL   MODAL   MODAL*/
-
-/* PRODUCT  PRODUCT  PRODUCT  PRODUCT  PRODUCT  PRODUCT  PRODUCT*/
-
-#modal-product .cover{
-  height: 40%; width: calc(100% + 40px);
-  margin-left: -20px; margin-top: -20px;
-  background-color: var(--red);
-  overflow: hidden;
-}
-
-#modal-product .container-modal{
-  height: 60vh;
-  position: relative;
-}
-
-#modal-product img{
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  transform: translateY(-30%);
-}
-
-#modal-product h3{
-  color: var(--red); font-size: 30px; text-transform: uppercase;
-  margin-top: 10px;
-}
-
-#modal-product .description{
-  margin-top: 30px; font-size: 15px;
-}
-
-#modal-product .price{
-  margin-top: 20px;
-}
-
-#modal-product .btn {
-  position: absolute;
-  left: 50%; transform: translateX(-50%);
-  bottom: 3%;
-  width: calc(100% - 40px);
-  display: flex; justify-content: space-between;
-
-}
-
-#modal-product .btn button{
-  border-radius: 15px!important
-}
-
-#modal-product .btn i{
-  font-size: 35px!important; padding: 5px 8px;
-}
-
-
-
-/* PRODUCT  PRODUCT  PRODUCT  PRODUCT  PRODUCT  PRODUCT  PRODUCT*/

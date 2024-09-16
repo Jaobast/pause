@@ -1,4 +1,4 @@
-const btnCategory = document.querySelectorAll(".container_category button, .container_logo, .logo-button");
+const btnCategory = document.querySelectorAll(".container_category button, .container_logo");
 const btnClicked = document.querySelector(".clicked");
 const searchInput = document.getElementById('search');
 const menuTitel = document.querySelector('.container_header h1');
@@ -40,13 +40,6 @@ btnCategory.forEach(item => {
         } else {
             werbung.classList.add("hidden");
             popular.classList.add("hidden");
-        }
-
-        
-
-        if (item.classList.contains("logo-button")) {
-            document.getElementById("detail").classList.add("hidden");
-            document.getElementById('theme-color-meta').setAttribute('content', '#f4e6ce');
         }
 
 
